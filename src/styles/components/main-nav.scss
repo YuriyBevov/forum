@@ -1,0 +1,16 @@
+.main-nav {
+  &__list {
+    @extend .list-reset;
+    @extend .flex-wrap;
+  }
+
+  &__list-item {
+
+    a {
+      padding: 10px 8px;
+      color: var(--white);
+
+      @extend .hover-opacity;
+    }
+  }
+}

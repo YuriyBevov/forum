@@ -1,0 +1,50 @@
+.lw {
+  &-container {
+    margin: 0 auto;
+    padding: 0 var(--container-offset);
+    max-width: var(--container-width);
+    outline: 1px solid red;
+  }
+
+  &-container-fluid {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 var(--container-offset);
+    max-width: var(--container-fluid-width);
+  }
+
+  &-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--white);
+  }
+
+  &-subtitle {
+
+  }
+
+  &-main-text {
+
+  }
+
+  &-btn {
+    @extend .btn-reset;
+    @extend .flex-centered-content;
+    min-height: 40px;
+    width: fit-content;
+    min-width: 150px;
+    padding: 16px;
+
+    border: 1px solid transparent;
+    background-color: var(--white);
+    color: var(--primary);
+
+    @extend .hover-opacity;
+
+    &-outlined {
+      border-color: var(--white);
+      background-color: transparent;
+      color: var(--white);
+    }
+  }
+}
